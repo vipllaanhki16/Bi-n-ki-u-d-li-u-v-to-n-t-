@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Biến, kiểu dữ liệu và toán tử</title>
+	
+</head>
+<body>
+    <p>Bài 1</p>
+    <script>
+        var vat_li=parseInt(prompt("Nhập điểm vật lí: "));
+        var hoa_hoc=parseInt(prompt("Nhập điểm hóa học: "));
+        var sinh_hoc=parseInt(prompt("Nhập điểm sinh học: "));
+        var sum=vat_li +hoa_hoc+sinh_hoc;
+        var average=sum/3;
+        document.write("Tổng điểm là: "+sum) ;
+        document.write("<br/>");
+        document.write("Điểm trung bình là: "+average);
+        document.write("<br/>");
+    </script>
+    <p>Bài 2</p>
+    <script>
+        var doC=parseInt(prompt("Nhập độ C: "));
+        var doF=(doC/5)*9+32;
+        document.write("Độ F cần tìm là: "+doF);
+    </script>
+    <br/>
+    <p>Bài 3+4</p>
+    <script>
+        var r=parseFloat(prompt("Nhập bán kính: "));
+        var c=2*r*3.14;
+        var s=3.14*r*r;
+        document.write("Chu vi hình tròn là:"+c);
+        document.write("<br/>");
+        document.write("Diện tích hình tròn là:"+s);
+    </script>
+</body>
+</html>
