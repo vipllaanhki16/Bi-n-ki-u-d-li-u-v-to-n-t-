@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<title>Ứng dụng chuyển đổi tiền tệ</title>
+    <script type="text/javascript">
+        function change_money(){
+            var s=parseInt(document.getElementById("amount").value);
+            var result=s/23000;
+            document.getElementById("ketqua").innerHTML="Result: "+result;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+            <form method="POST">
+                    <b>Amount</b>
+                    <input type="text" id="amount"> 
+                
+                    <b>From Currency</b>
+                    <select name="" id="">
+                        <option value="">VietNam</option>
+                        <option value="">#</option>
+                    </select>
+                   
+                    <b>To Currency</b>
+                    <select name="" id="">
+                        <option value="">USA</option>
+                        <option value="">#</option>
+                    </select>
+                    <button type="button" class="btn btn-primary" onclick="change_money()">Convert</button>
+                    <div id="ketqua" style="color:blue"></div>
+                    
+            </form>
+    </div>
+	
+</body>
+</html>
